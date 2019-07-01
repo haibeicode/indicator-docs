@@ -1,0 +1,4 @@
+.vscode
+build
+venv
+/source/_build/html
