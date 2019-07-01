@@ -5,3 +5,6 @@ Technology Indicator Tool
    :maxdepth: 3
 
    average
+   chat
+   countertrend
+   dragon
