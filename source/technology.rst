@@ -2,9 +2,10 @@ Technology Indicator Tool
 ==========================================
 
 .. toctree::
-   :maxdepth: 3
+	:maxdepth: 3
 
-   average
-   chat
-   countertrend
-   dragon
+	average
+	chat
+	countertrend
+	dragon
+	energy

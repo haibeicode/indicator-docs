@@ -1,17 +1,15 @@
 System Initialization
 ==========================================
 
-
 Install
 --------------------------
 PIP ::
 
-   pip instal indicator
-
+  pip instal indicator
 
 Upgrade
 --------------------------
 
 PIP ::
 
-   pip instal --upgrade indicator
+  pip instal --upgrade indicator

@@ -2,8 +2,8 @@ Indicator Tool
 ==========================================
 
 .. toctree::
-   :maxdepth: 3
+	:maxdepth: 3
 
-   install
-   base
-   technology
+	install
+	base
+	technology

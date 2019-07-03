@@ -15,19 +15,14 @@ Chart type
 
   重心线
 
-  重心线指标，重心线是由重心价连接而成的曲线，反映历史平均价位，
-  对于指数计算公式为:
-
-  `ZX = 成交金额/成交量`
-
-  对个股而言:
-
-  `ZX ＝ (最高指数＋最低指数＋收盘指数)/3`
-
-  类似于不加权平均指数。
+  * 重心线指标，重心线是由重心价连接而成的曲线，反映历史平均价位
+  * 对于指数计算公式为: ZX = 成交金额/成交量
+  * 对个股而言: ZX ＝ (最高指数＋最低指数＋收盘指数)/3
+  * 类似于不加权平均指数
 
   :param df: DataFrame
-  :rtype: pandas DataFrame
+  :return:
+    :AV: 0.01*成交额(元)/成交量(手)
 
 .. py:function:: PUCU(df, N=2)
 
@@ -39,4 +34,6 @@ Chart type
 
   :param df: DataFrame
   :param N: 天数
-  :rtype: pandas DataFrame
+  :return:
+	  :PU: 收盘价的N日简单移动平均
+    :CU: 成交量(手)的N日简单移动平均
