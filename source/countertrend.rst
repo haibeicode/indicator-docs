@@ -22,7 +22,7 @@ Overbought and Oversold
     :TYP: (最高价+最低价+收盘价)/3
     :CCI: (TYP-TYP的N日简单移动平均)/(0.015*TYP的N日平均绝对偏差)
 
-  .. note:: 
+  .. note::
     商品路径指标
 
     #. CCI 为正值时，视为多头市场；为负值时，视为空头市场
@@ -42,7 +42,7 @@ Overbought and Oversold
     :D: K的M2日[1日权重]移动平均
     :J: 3*K-2*D
 
-  .. note:: 
+  .. note::
     随机指标
 
     #. 指标>80 时，回档机率大；指标<20时，反弹机率大
@@ -59,7 +59,7 @@ Overbought and Oversold
   :return:
     :MFI: 如果TYP>1日前的TYP,返回TYP*成交量(手),否则返回0的N日累和/如果TYP<1日前的TYP,返回TYP*成交量(手),否则返回0的N日累和输出资金流量指标:100-(100/(1+V1))
 
-  .. note:: 
+  .. note::
     资金流量指标
 
     #. MFI>80 为超买，当其回头向下跌破80 时，为短线卖出时机
@@ -75,7 +75,7 @@ Overbought and Oversold
   :param M: 间隔天数，也是求移动平均的天数，一般取6
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     动量线
 
     #. MTM从下向上突破MTMMA，买入信号
@@ -94,7 +94,7 @@ Overbought and Oversold
   :param M: 资金流量
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     随机指标
 
 .. py:function:: SKDJ(df, N=9, M=3)
@@ -105,7 +105,7 @@ Overbought and Oversold
   :param M: 天
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     慢速随机指标
 
     #. 指标>80 时，回档机率大；指标<20 时，反弹机率大
@@ -125,7 +125,7 @@ Overbought and Oversold
   :param M: 天移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     引力线
 
     #. 本指标的超买超卖界限值随个股不同而不同，使用者应自行调整
@@ -141,7 +141,7 @@ Overbought and Oversold
   :param N1: 威廉指标
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     威廉指标
 
     #. WR波动于0 - 100，100置于顶部，0置于底部
@@ -158,7 +158,7 @@ Overbought and Oversold
   :param M1: 指数移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     威廉指标
 
 .. py:function:: BIASQL(df, N=6, M=6)
@@ -169,7 +169,7 @@ Overbought and Oversold
   :param M: 平均乖离率
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     乖离率-传统版
 
 .. py:function:: BIAS(df, N1=6, N2=12, N3=24)
@@ -181,7 +181,7 @@ Overbought and Oversold
   :param N3: 乖离率
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     乖离率
 
     #. 本指标的乖离极限值随个股不同而不同，使用者可利用参考线设定，固定其乖离范围
@@ -196,7 +196,7 @@ Overbought and Oversold
   :param M: 移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     三六乖离
 
     #. 本指标的乖离极限值随个股不同而不同，使用者可利用参考线设定，固定其乖离范围。※一般6-12BIAS信号的可靠度比3-6BIAS佳
@@ -212,7 +212,7 @@ Overbought and Oversold
   :param M: 移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     动态买卖气指标
 
     #. 该指标在+1到-1之间波动
@@ -225,7 +225,7 @@ Overbought and Oversold
   :param N: 移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     真实波幅
 
     * 算法：今日振幅、今日最高与昨收差价、今日最低与昨收差价中的最大值，为真实波幅，求真实波幅的N日移动平均
@@ -238,7 +238,7 @@ Overbought and Oversold
   :param M: 移动平均
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     多空线
 
     #. 当多空线上穿其均线时为买入信号
@@ -252,7 +252,7 @@ Overbought and Oversold
   :param M: TAPI
   :rtype: pandas DataFrame
 
-  .. note:: 
+  .. note::
     多空线
 
     #. 先界定TAPI长期以来经常性的高低极限值，当TAPI触及顶端极限时，股价可能形成头部当TAPI触及底端极限时，股价可能形成底部

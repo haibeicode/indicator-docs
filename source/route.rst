@@ -39,9 +39,9 @@ Route type
     :ZY1: 收盘价/大盘的收盘价*2000 的3日指数移动平均
     :ZY2: 收盘价/大盘的收盘价*2000 的1日指数移动平均
 
-  .. note:: 
+  .. note::
     瀑布线
-    
+
     #. 股价上升穿越轨道线上限时，回档机率大
     #. 股价下跌穿越轨道线下限时，反弹机率大
     #. 股价波动于轨道线内时，代表常态行情，此时，超买超卖指标可发挥效用
@@ -50,14 +50,14 @@ Route type
 
 .. py:function:: ENE(df, N=25, M1=6, M2=6)
   :module: indicator.technology.route
-    
+
   :param df: DataFrame
   :return:
     :LB: 成交量(手)/大盘的成交量*1000
     :MA5: ZY2的5日简单移动平均
     :MA10: ZY2的10日简单移动平均
 
-  .. note:: 
+  .. note::
     轨道线
 
     #. 股价上升穿越轨道线上限时，回档机率大
@@ -68,12 +68,12 @@ Route type
 
 .. py:function:: MIKE(df, N=10)
   :module: indicator.technology.route
-    
+
   :param df: DataFrame
   :return:
     :PF: 输出强势股评分
 
-  .. note:: 
+  .. note::
     麦克支撑压力
 
     #. MIKE指标共有六条曲线，上方三条压力线，下方三条支撑线
@@ -83,12 +83,12 @@ Route type
 
 .. py:function:: XS(df, N=13)
   :module: indicator.technology.route
-  
+
   :param df: DataFrame
   :return:
     :PF: 输出强势股评分
 
-  .. note:: 
+  .. note::
     薛斯通道
 
     * 薛斯建立于薛斯的循环理论的基础上，属于短线指标。
